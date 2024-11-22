@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE curriculum >
+
+<tickets lang="es">
+    <ticket>
+        <membrete cif="B7984651">
+            <razon_social>PC Renso S.A</razon_social>
+            <web_empresa>www.pcrenso.com</web_empresa>
+            <codigo_sucursal>045</codigo_sucursal>
+            <nombre_sucursal>PC Renso</nombre_sucursal>
+            <ubicacion_sucursal>Carrer de les navaixaes 4, 2</ubicacion_sucursal>
+            <codigo_postal_sucursal>04079</codigo_postal_sucursal>
+            <localidad_sucursal_cliente>Ràfol D'Almunia</localidad_sucursal_cliente>
+            <telefono_sucursal tipotelefono="fijo">789 465 123</telefono_sucursal>
+        </membrete>
+
+        <cabecera numero_ticket="A001">
+            <fecha_ticket>21-11-2024</fecha_ticket>
+            <hora_ticket>12:34 AM</hora_ticket>
+            <nombre_empleado>Miquel Serra</nombre_empleado>   
+        </cabecera>
+
+        <lineas>
+            <linea identificador_cantidad="A32">
+                <cantidad_unidades>1</cantidad_unidades>
+                <descripcion_articulo>Permite acceso a una red de forma inalámbrica. </descripcion_articulo>
+                <rebaja></rebaja>
+                <precio rebaja="false">30€</precio>
+                
+            </linea>
+        </lineas>
+        <resumen>
+            <metodo_pago>Efectivo</metodo_pago>
+            <importe_total>30€</importe_total>
+        </resumen>
+    </ticket>
+
+    <ticket>
+        <razon_social>PC Renso S.A</razon_social>
+            <web_empresa>www.pcrenso.com</web_empresa>
+            <codigo_sucursal>045</codigo_sucursal>
+            <nombre_sucursal>PC Renso</nombre_sucursal>
+            <ubicacion_sucursal>Carrer de les navaixaes 4, 2</ubicacion_sucursal>
+            <codigo_postal_sucursal>04079</codigo_postal_sucursal>
+            <localidad_sucursal_cliente>Ràfol D'Almunia</localidad_sucursal_cliente>
+            <telefono_sucursal tipotelefono="fijo">789 465 123</telefono_sucursal>
+
+        <cabecera numero_ticket="A001">
+            <fecha_ticket>20-1-+1-2024</fecha_ticket>
+            <hora_ticket>18:29 PM</hora_ticket>
+            <nombre_empleado>I can't breath</nombre_empleado>   
+        </cabecera>
+ 
+        <lineas>
+            <linea identificador_cantidad="A32">
+                <cantidad_unidades>2</cantidad_unidades>
+                <descripcion_articulo>uy uy uy</descripcion_articulo>
+                <rebaja>5%</rebaja>
+                <precio rebaja="true">20€</precio>
+                
+            </linea>
+        </lineas>
+        <resumen>
+            <metodo_pago>Tarjeta</metodo_pago>
+            <importe_total>20€</importe_total>
+        </resumen>
+    </ticket>
+</tickets>

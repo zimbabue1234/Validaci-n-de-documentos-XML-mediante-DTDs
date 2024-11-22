@@ -1,0 +1,38 @@
+<!ELEMENT tickets (ticket+)>
+<!ATTLIST tickets
+    lang CDATA #REQUIRED>
+
+<!ELEMENT ticket (membrete, cabecera, lineas, resumen)>
+<!ELEMENT membrete (razon_social, web_empresa, codigo_sucursal, nombre_sucursal, ubicacion_sucursal, codigo_postal_sucursal, localidad_sucursal_cliente, telefono_sucursal)>
+<!ATTLIST membrete cif CDATA #REQUIRED>
+    
+<!ELEMENT razon_social (#PCDATA)>
+<!ELEMENT web_empresa (#PCDATA)>
+<!ELEMENT codigo_sucursal (#PCDATA)>
+<!ELEMENT nombre_sucursal (#PCDATA)>
+<!ELEMENT ubicacion_sucursal (#PCDATA)>
+<!ELEMENT codigo_postal_sucursal (#PCDATA)>
+<!ELEMENT localidad_sucursal_cliente (#PCDATA)>
+<!ELEMENT telefono_sucursal (#PCDATA)>
+<!ATTLIST telefono_sucursal tipotelefono CDATA #REQUIRED>
+
+<!ELEMENT cabecera (fecha_ticket, hora_ticket, nombre_empleado)>
+<!ATTLIST cabecera numero_ticket CDATA #REQUIRED>
+
+<!ELEMENT fecha_ticket (#PCDATA)>
+<!ELEMENT hora_ticket (#PCDATA)>
+<!ELEMENT nombre_empleado (#PCDATA)>
+
+<!ELEMENT lineas (linea+)>
+<!ELEMENT linea (cantidad_unidades, descripcion_articulo, rebaja?, precio)>
+<!ATTLIST linea identificador_cantidad CDATA #REQUIRED>
+
+<!ELEMENT cantidad_unidades (#PCDATA)>
+<!ELEMENT descripcion_articulo (#PCDATA)>
+<!ELEMENT rebaja (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio rebaja (true | false) #REQUIRED>
+
+<!ELEMENT resumen (metodo_pago, importe_total)>
+<!ELEMENT metodo_pago (#PCDATA)>
+<!ELEMENT importe_total (#PCDATA)>
