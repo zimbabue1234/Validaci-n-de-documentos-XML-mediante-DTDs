@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE facturas SYSTEM "ejercicio7.dtd">
+
+<facturas>
+<factura numero="A006">
+    <membrete cif="A23874">
+        <razon_social_empresa>No comen jamón S.L</razon_social_empresa>
+        <direccion_empresa>Av. Miquel Serra</direccion_empresa>
+        <codigo_postal_empresa>928374</codigo_postal_empresa>
+        <poblacion_empresa>Pedreguer</poblacion_empresa>
+        <telefono_empresa>912 123 245</telefono_empresa>
+        <email_empresa>miquelserra@miquelserra.com</email_empresa>
+    </membrete>
+
+    <fecha>18-11-2024</fecha>
+
+    <cliente>
+        <dni_cliente>723648924J</dni_cliente>
+        <nombre_cliente>Serra Miquel</nombre_cliente>
+        <direccion_cliente>Carrer Miquel Serra</direccion_cliente>
+        <codigo_postal_cliente>928374</codigo_postal_cliente>
+        <poblacion_cliente>Pedreguer</poblacion_cliente>
+    </cliente>
+
+    <productos>
+        <producto codigo="LP001">
+            <cantidad_producto>1</cantidad_producto>
+            <descripcion_producto>Portátil Miquel Serra</descripcion_producto>
+            <precio_unitario>800</precio_unitario>
+            <IVA>21</IVA>
+        </producto>
+
+        <producto codigo="MQS23">
+            <cantidad_producto>1</cantidad_producto>
+            <descripcion_producto>Monitor de Miquel Serra</descripcion_producto>
+            <precio_unitario>120</precio_unitario>
+            <IVA>21</IVA>
+        </producto>
+
+        <producto codigo="SMQ281">
+            <cantidad_producto>1</cantidad_producto>
+            <descripcion_producto>Ratón de Miquel Serra</descripcion_producto>
+            <precio_unitario>20</precio_unitario>
+            <IVA>21</IVA>
+        </producto>
+    </productos>
+
+    <resumen>
+        <forma_pago tipo="Transferencia">Miquel Serra</forma_pago>
+    </resumen>
+
+    </factura>
+</facturas>

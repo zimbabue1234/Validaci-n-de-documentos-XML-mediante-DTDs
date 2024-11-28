@@ -1,0 +1,41 @@
+<!ELEMENT facturas (factura+)>
+<!ATTLIST factura numero CDATA #REQUIRED>
+
+<!ELEMENT factura (membrete, fecha, cliente, productos, resumen)>
+
+<!ELEMENT membrete (razon_social_empresa, direccion_empresa, codigo_postal_empresa, poblacion_empresa, telefono_empresa, email_empresa)>
+<!ATTLIST membrete cif ID #REQUIRED>
+
+<!ELEMENT cif_empresa (#PCDATA)>
+<!ELEMENT razon_social_empresa (#PCDATA)>
+<!ELEMENT direccion_empresa (#PCDATA)>
+<!ELEMENT codigo_postal_empresa (#PCDATA)>
+<!ELEMENT poblacion_empresa (#PCDATA)>
+<!ELEMENT telefono_empresa (#PCDATA)>
+<!ELEMENT email_empresa (#PCDATA)>
+
+<!ELEMENT fecha (#PCDATA)>
+
+<!ELEMENT cliente (dni_cliente, nombre_cliente, direccion_cliente, codigo_postal_cliente, poblacion_cliente)>
+
+<!ELEMENT dni_cliente (#PCDATA)>
+<!ELEMENT nombre_cliente (#PCDATA)>
+<!ELEMENT direccion_cliente (#PCDATA)>
+<!ELEMENT codigo_postal_cliente (#PCDATA)>
+<!ELEMENT poblacion_cliente (#PCDATA)>
+
+<!ELEMENT productos (producto+)>
+
+<!ELEMENT producto (cantidad_producto, descripcion_producto, precio_unitario, IVA)>
+<!ATTLIST producto codigo ID #REQUIRED>
+
+<!ELEMENT codigo_producto (#PCDATA)>
+<!ELEMENT cantidad_producto (#PCDATA)>
+<!ELEMENT descripcion_producto (#PCDATA)>
+<!ELEMENT precio_unitario (#PCDATA)>
+<!ELEMENT IVA (#PCDATA)>
+
+<!ELEMENT resumen (forma_pago)>
+
+<!ELEMENT forma_pago (#PCDATA)>
+<!ATTLIST forma_pago tipo CDATA #REQUIRED>
